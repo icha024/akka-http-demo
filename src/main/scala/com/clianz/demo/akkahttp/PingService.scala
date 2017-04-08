@@ -3,7 +3,7 @@ package com.clianz.demo.akkahttp
 import akka.http.scaladsl.model.{ContentTypes, HttpEntity}
 import akka.http.scaladsl.server.Directives
 
-class PingService extends Directives with JsonSupport {
+class PingService extends Directives {
 
   def route =
     path("ping") {
